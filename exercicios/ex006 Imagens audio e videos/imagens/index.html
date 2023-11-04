@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        #total {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Vendedor de Plantas</h1>
+
+        <label for="plantas">Escolha uma planta:</label>
+        <select id="plantas">
+            <option value="rosa">Rosa - R$ 10,00</option>
+            <option value="lirio">Lírio - R$ 8,00</option>
+            <option value="orquidea">Orquídea - R$ 15,00</option>
+        </select>
+
+        <label for="quantidade">Quantidade desejada:</label>
+        <input type="number" id="quantidade" value="1" min="1" />
+
+        <button onclick="calcularTotal()">Calcular Total</button>
+
+        <p>Total: <span id="total">R$ 0,00</span></p>
+    </div>
+
+    <script>
+        function calcularTotal() {
+            var plantaSelecionada = document.getElementById("plantas");
+            var quantidade = document.getElementById("quantidade").value;
+            var total = 0;
+
+            if (plantaSelecionada.value === "rosa") {
+                total = 10 * quantidade;
+            } else if (plantaSelecionada.value === "lirio") {
+                total = 8 * quantidade;
+            } else if (plantaSelecionada.value === "orquidea") {
+                total = 15 * quantidade;
+            }
+
+            document.getElementById("total").textContent = "R$ " + total.toFixed(2);
+        }
+    </script>
+</body>
+</html>

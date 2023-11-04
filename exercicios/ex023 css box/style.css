@@ -1,0 +1,57 @@
+body{
+    background-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: black;
+    color: white; 
+    text-align: center;
+}
+nav{
+    color: black;
+    background-color: white;
+}
+
+nav > a { text-decoration:none;
+
+    color: black;
+}
+
+ a:hover {
+    color: blueviolet;
+ }
+
+
+ section{ background-color: black; 
+
+    color: white;
+
+ }
+
+ section > h1 { text-align: center;
+
+border: 2px solid violet;
+
+    
+
+ }
+
+ aside{
+    padding-top: 60px;
+    text-align: center;
+    text-decoration: dashed;
+ }
+
+
+ footer{
+    padding-top: 60px;
+ }
+ 
+ .dark{
+    box-shadow: 3px 3px 3px black; 
+    border-radius: 10px;
+
+background-color: aliceblue;
+ }
+ 
+

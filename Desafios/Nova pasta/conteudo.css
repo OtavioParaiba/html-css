@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+
+:root{
+    --cor0: #322D38;
+    --cor1: #4C3A61 ;
+    --cor2: #633B94;
+    --cor3: #6F28C7;
+    --cor4: #7000F9;
+    --cor5: #003352;
+
+
+    --fonte-padrão: 'work sans'; 
+    --fonte-destaque: 'oswald' ;
+    
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+   
+}
+
+article{
+    background-color: white; 
+    margin: 10px 85px 0px 85px;
+    padding: 10px;
+} 
+
+
+article h2 {
+    font-family: var(--fonte-padrão);
+    background-image: linear-gradient(to right, var(--cor4), transparent );
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+} 
+
+article p {
+    text-align: justify;
+    line-height: 28px;
+    
+}
+
+.conteiner{
+    text-align: center;
+    color: white; 
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor1); 
+    margin: 0px -1px -9px -1px ;
+    height: 200px; 
+    
+    
+}
+
+.conteiner > h1 {
+    padding-bottom: 24px;
+    padding-top: 16px;
+}
+
+
+.assinatura{
+    height: 86px;
+    margin: 30px 15px -6px 230px;
+
+
+    
+    
+
+}
+
+p#ass {
+    text-align: center;
+}

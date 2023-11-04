@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseud-Class</title>
+    <style>
+        .d1{
+            background-color: grey;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black
+            
+        }
+        div:hover {
+            background-color: blue;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color:aliceblue;
+            color: aqua;
+            
+        } 
+    </style>
+</head>
+<body>
+    <div class="d1" >1</div>
+    <div class="d1">2</div>
+    <div class="d1" >3</div>
+
+    <H3>Texto Escondido</H3>
+    <div>
+        <p>Passe o Mouse</p>
+    </div>
+</body>
+</html>
