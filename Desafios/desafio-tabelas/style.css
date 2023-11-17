@@ -1,0 +1,12 @@
+table{
+    width: 500px;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid violet;
+    height: 35px;
+    
+
+
+}
