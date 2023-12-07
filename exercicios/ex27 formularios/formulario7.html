@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Texte De Formulario</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+
+             <option value="Escolha" selected>--Escolha--</option>
+
+            <optgroup label="Sul">
+                <option value="RS"> Rio Grande Do Sul</option>
+                <option value="SC"> Santa Catarina</option>
+                <option value="PR"> Parana</option>
+            </optgroup>
+
+            
+            <optgroup label="Sudeste">
+                <option value="SP"> São Paulo</option>
+                <option value="RJ"> Rio De Janeiro</option>
+                <option value="ES"> Espirito Santo</option>
+                <option value="MG"> Minas Gerais</option>
+            </optgroup>
+
+        </select>
+
+        <p>
+            <label for="oucupaçao">Oucupação</label>
+            <input type="text" name="oucupaçao" id="oucupaçao" list="lista">
+            <datalist id="lista">
+                <option >Professor</option>
+                <option >Adiministrador</option>
+            </datalist>
+
+        </p>
+
+        <P>
+            <label for="msg">Opinião</label> <br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </P>
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
