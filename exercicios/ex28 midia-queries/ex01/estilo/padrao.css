@@ -1,7 +1,54 @@
 @charset "UTF-8";
 
+  @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&display=swap');
+
+
 
 *{
     padding: 0px;
     margin: 0px;
+    
+}
+
+
+body{
+    background-color: white
+}
+
+header{
+    background-color: #002A54;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: "kalnia";
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-family: "kalnia";
+    padding-left: 10px;
+
+}
+
+a:hover{
+ 
+    background-color: #FF9800;
+
+}
+
+
+article{ padding: 10px;
+
+}
+
+h2{
+    color: #002A54;
+    padding: 10px 0px 14px 0px;
+
 }
